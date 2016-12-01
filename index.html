@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Advent of Christmas</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="site.css">
+
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <h1>Advent of Christmas</h1>
+        <div class="accordion">
+            <div class="accordionSection">
+                <a class="accordionTitle" href="#1">Day 1: No Time for a Taxicab</a>                
+                <div id="1" class="accordionContent">
+                    <form>
+                        <label for="1-1-file">Please input a text file</label>
+                        <input id="1-1-file" type="file">
+                        <button type="button" onclick="day1Puzzle1()">Submit</button>                            
+                    </form>
+                    <div id='1-1'>
+                        <h3>Part 1</h3>                        
+                        <p class="answer">Easter Bunny HQ is <span></span> blocks away</p>
+                    </div>   
+                    <div id='1-2'>
+                        <h3>Part 2</h3>
+                        <form>
+                            <p class="answer">Easter Bunny HQ is <span></span> blocks away</p>
+                        </form>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="site.js"></script>
+</body>
+
+</html>

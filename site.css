@@ -1,0 +1,70 @@
+body {
+    padding-top: 50px;
+}
+
+.answer {
+    display: none;
+}
+
+.accordion {
+    overflow:hidden;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+    background:#f7f7f7;
+}
+
+.accordionTitle {
+    width:100%;
+    padding:15px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    transition:all linear 0.15s;
+    font-size:1.2em;
+    text-shadow:0px 1px 0px #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+}
+
+.accordionSection:nth-child(odd) .accordionTitle{
+    background-color:darkgreen;
+}
+ 
+.accordionSection:nth-child(even) .accordionTitle{
+    background-color:firebrick;
+}
+
+.accordionTitle.active, .accordionTitle:hover {
+    text-decoration:none;
+    color: #fff;
+}
+ 
+.accordionSection:last-child .accordionTitle {
+    border-bottom:none;
+}
+
+.accordionContent {
+    padding:15px;
+    display:none;
+}
+
+.accordionContent >div{
+    padding-bottom: 25px;
+}
+
+.accordionContent form{
+    width: 370px;
+    padding-bottom: 25px;
+}
+
+.accordionContent form input{
+    float: left;
+}
+
+.accordionContent form button{
+    float: right;
+    width: 80px;
+    border-radius: 5px;
+    background-color: white;
+    top: -5px;
+    position: relative;
+}
